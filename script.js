@@ -135,7 +135,7 @@ btnLogin.addEventListener('click', function (e) {
   // Prevent form from submitting
   e.preventDefault();
   currentAccount = accounts.find(
-    acc => acc.username === inputLoginUsername.value.toLowerCase()
+    acc => acc.username === inputLoginUsername.value.trim().toLowerCase()
   );
   console.log(currentAccount);
 
