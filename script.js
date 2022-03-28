@@ -54,6 +54,8 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const passwordAccounts = document.querySelector('.accounts');
+
 /////////////////////////////////////////////////
 // Functions
 
@@ -143,6 +145,7 @@ btnLogin.addEventListener('click', function (e) {
     // Display UI and message
     labelWelcome.textContent = `Welcome back, ${currentAccount.owner}`;
     containerApp.style.opacity = 100;
+    passwordAccounts.style.display = 'none';
 
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';

@@ -280,6 +280,9 @@ h2 {
 }
 
 .accounts {
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   font-size: 1.2rem;
+}
+.accounts span {
+  font-weight: 500;
 }
